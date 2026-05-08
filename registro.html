@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!--Página web creada por Antonio Romero Ortiz-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Olympus Fitness Center</title>
+</head>
+
+<body>
+    <div id="titulo">
+        <h1>Olympus Fitness Center</h1>
+    </div>
+    <h2>Registro</h2>
+    <form name="registro" action="#" method="POST">
+        Nombre: <input type="text" name="inputNombre"><br>
+        PIN de acceso: <input type="password" name="inputPIN"><br><br>
+        Servicios:<br>
+        Toalla: <input type="checkbox" name="toalla"><br>
+        Taquilla: <input type="checkbox" name="taquilla"><br>
+        Sauna: <input type="checkbox" name="sauna"><br><br>
+
+        Tipo de cuota:<br>
+        <input type="radio" id="anual" name="grupo1" value="1" checked>
+        <label for="anual">Anual</label><br>
+
+        <input type="radio" id="trimestral" name="grupo1" value="2">
+        <label for="trimestral">Trimestral</label><br>
+
+        <input type="radio" id="mensual" name="grupo1" value="3">
+        <label for="mensual">Mensual</label><br>
+
+        <input type="radio" id="semanal" name="grupo1" value="4">
+        <label for="semanal">Semanal</label><br><br>
+
+        Documentación: <input type="file" name="documentacion"><br><br>
+
+        Clase: <select name="selecciondeclase" id="clase">
+            <option value="" disabled selected>-Seleccionar-</option>
+            <option value="spinning">Spinning</option>
+            <option value="yoga">Yoga</option>
+            <option value="bodypump">Body pump</option>
+            <option value="crosstraining">Cross training</option>
+            <option value="zumba">Zumba</option>
+            <option value="funcional">Funcional</option>
+            <option value="pilates">Pilates</option>
+        </select><br><br>
+
+        Indique si tiene algún tipo de lesión o condición médica:<br>
+        <textarea name="condicionmedica" id="condicionmedica" cols="60" rows="5"></textarea><br><br>
+
+        <input type="submit" name="enviarregistro" id="submitregistro" value="Enviar registro">
+        <input type="reset" name="resetregistro" id="resetregistro" value="Borrar datos">
+    </form>
+    <hr>
+    <h2 id="contacto">Contacto e información</h2>
+    <p>Nuestro colaborador: <a href="https://eu.puma.com/es/es" target="_blank">Puma</a></p>
+    <p>Nuestras redes sociales:<br></p>
+    <a href="https://x.com" target="_blank"><img src="images/twitter.png" alt="twitter" title="twitter" width="32"
+            height="32"></a>
+    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img src="images/Youtube_logo.png" alt="Youtube"
+            title="Youtube" width="32" height="24"></a>
+
+
+</body>
+
+</html>
